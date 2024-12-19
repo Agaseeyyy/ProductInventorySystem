@@ -145,7 +145,7 @@ if ($itemsPerPage !== 'all') {
           <div>
             <div class="flex items-center gap-2 px-3 text-sm text-gray-600">
               <label for="entries-categories">Show</label>
-              <select id="entries-categories" class="px-2 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500">
+              <select id="entries-categories" class="px-2 py-2 border rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-rose-500">
                 <option value="5">5</option>
                 <option value="10">10</option>
                 <option value="25">25</option>
@@ -173,7 +173,7 @@ if ($itemsPerPage !== 'all') {
             </div>
           <?php endif ?>
           <!-- Add Category Button -->
-          <button onclick="openModal('add-category')" class=" right-0 flex items-center  text-xs h-8 gap-1 shadow-[0_5px_5px_rgba(0,0,0,0.15)] px-3 py-2 text-white rounded-md bg-green-500 transition duration-300 hover:bg-green-700 hover:shadow-none">
+          <button onclick="openModal('add-category')" class="h-9 right-0 flex items-center text-xs gap-1 shadow-[0_5px_5px_rgba(0,0,0,0.15)] px-3 text-white rounded-md transition duration-300 bg-green-500 hover:bg-green-700 hover:shadow-none">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
             </svg>
@@ -181,7 +181,7 @@ if ($itemsPerPage !== 'all') {
           </button>
           <!-- Generate Category Button -->
           <?php if (!empty($categories)): ?>
-            <button onclick="openModal('generate-report-category')" class="flex items-center text-xs gap-1 shadow-[0_5px_5px_rgba(0,0,0,0.15)] h-8 px-3 py-2 text-white rounded-md bg-yellow-500 transition duration-300 hover:bg-yellow-700 hover:shadow-none">
+            <button onclick="openModal('generate-report-category')" class="flex items-center text-xs gap-1 shadow-[0_5px_5px_rgba(0,0,0,0.15)] h-9 px-3 text-white rounded-md bg-yellow-500 transition duration-300 hover:bg-yellow-700 hover:shadow-none">
               <svg class="size-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10V4a1 1 0 0 0-1-1H9.914a1 1 0 0 0-.707.293L5.293 7.207A1 1 0 0 0 5 7.914V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2M10 3v4a1 1 0 0 1-1 1H5m5 6h9m0 0-2-2m2 2-2 2"/>
               </svg>

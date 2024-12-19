@@ -218,7 +218,7 @@ if ($itemsPerPage !== 'all') {
           <div>
             <div class="flex items-center gap-2 px-3 text-sm text-gray-600">
               <label for="entries-products">Show</label>
-              <select id="entries-products" class="px-2 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500">
+              <select id="entries-products" class="px-2 py-2 border rounded-md cursor-pointer  focus:outline-none focus:ring-2 focus:ring-rose-500">
                 <option value="5">5</option>
                 <option value="10">10</option>
                 <option value="25">25</option>
@@ -247,7 +247,6 @@ if ($itemsPerPage !== 'all') {
             </div>
           <?php endif ?>
           <!-- Add Product Button -->
-          
           <button onclick="openModal('add-product')" class="h-9 right-0 flex items-center text-xs gap-1 shadow-[0_5px_5px_rgba(0,0,0,0.15)] px-3 text-white rounded-md transition duration-300 bg-green-500 hover:bg-green-700 hover:shadow-none">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
