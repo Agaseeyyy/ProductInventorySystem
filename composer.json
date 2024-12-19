@@ -1,0 +1,21 @@
+{
+    "name": "product-mmanagement/product-inventory-management-system",
+    "description": "A PHP-based inventory management system to track products, stock levels, suppliers, and categories with reporting capabilities.",
+    "type": "project",
+    "license": "unlicense",
+    "autoload": {
+        "psr-4": {
+            "ProductMmanagement\\ProductInventoryManagementSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agaseeyyy",
+            "email": "bustargaagassi@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "tecnickcom/tcpdf": "^6.7"
+    }
+}
