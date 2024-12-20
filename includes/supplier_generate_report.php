@@ -46,7 +46,7 @@
                   class="text-xs px-3 py-2 text-white bg-gray-400 rounded-md transition duration-300 hover:bg-gray-500 shadow-[0_5px_5px_rgba(0,0,0,0.15)]">
               Cancel
           </button>
-          <button type="submit" class="text-xs px-3 py-2 text-white bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-700 shadow-[0_5px_5px_rgba(0,0,0,0.15)]">
+          <button type="submit" onclick="closeModal('generate-report-supplier')" class="text-xs px-3 py-2 text-white bg-yellow-500 rounded-md transition duration-300 hover:bg-yellow-700 shadow-[0_5px_5px_rgba(0,0,0,0.15)]">
               Generate Report
           </button>
       </div>

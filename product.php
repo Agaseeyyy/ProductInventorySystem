@@ -131,11 +131,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 if ($exportType === 'pdf') {
                     $_SESSION['message'] = "Product PDF report generated successfully!";
-                    exportProductReportToPDF($reportData);
-                    
+                    exportProductReportToPDF($reportData);       
                 } elseif ($exportType === 'csv') {
                     $_SESSION['message'] = "Product CSV report generated successfully!";
                     exportProductReportToCSV($reportData);
+                    exit();
                 }
         }
 
@@ -218,7 +218,7 @@ if ($itemsPerPage !== 'all') {
           <div>
             <div class="flex items-center gap-2 px-3 text-sm text-gray-600">
               <label for="entries-products">Show</label>
-              <select id="entries-products" class="px-2 py-2 border rounded-md cursor-pointer  focus:outline-none focus:ring-2 focus:ring-rose-500">
+              <select id="entries-products" class="px-2 py-2 border rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-rose-500">
                 <option value="5">5</option>
                 <option value="10">10</option>
                 <option value="25">25</option>

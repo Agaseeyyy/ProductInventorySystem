@@ -75,6 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 } elseif ($exportType === 'csv') {
                     $_SESSION['message'] = "Supplier CSV report generated successfully!";
                     exportSupplierReportToCSV($reportData);
+                    exit();
                 }
                 break;
         }
